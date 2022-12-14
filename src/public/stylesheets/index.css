@@ -1,0 +1,84 @@
+.Landing-Banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 90vh;
+}
+
+.Landing-Banner .Box-Left {
+  width: 45%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Landing-Banner .Box-Left .Box-Left-Top {
+  background-color: #9bf8ff;
+}
+
+.Landing-Banner .Box-Left .Box-Left-Bottom {
+  background-color: #9bf8ff;
+  z-index: 10;
+}
+
+.Landing-Banner .Box-Right {
+  width: 55%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Landing-Banner .Box-Right .Box-Right-Top {
+  background-color: #ffffff;
+}
+
+.Landing-Banner .Box-Right .Box-Right-Bottom {
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.Landing-Banner .Landing-Title {
+  color: black;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Landing-Banner .Landing-Title h1, .Landing-Banner .Landing-Title h2 {
+  color: black;
+}
+
+.Landing-Banner .Landing-Title h1 {
+  font-size: 50px;
+}
+
+.Landing-Banner .Landing-Title h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+.App h1 {
+  color: aliceblue;
+  margin: 0%;
+}
+/*# sourceMappingURL=index.css.map */
