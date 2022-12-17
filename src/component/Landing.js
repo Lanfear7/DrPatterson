@@ -22,7 +22,7 @@ function Landing() {
     })
     const sprintTitle = useSpring({
         delay: 1800,
-        config: {duration: 500},
+        config: {duration:1000},
         from: {y: 100},
         to:{y: -height+height/2+100}
     })
