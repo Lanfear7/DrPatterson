@@ -26,7 +26,6 @@ function Landing() {
         from: {y: 100},
         to:{y: -height+height/2+100}
     })
-    console.log(height, width)
 
   return (
     <div className='Landing-Banner'>
@@ -72,7 +71,7 @@ function Landing() {
             className='Landing-Title'
             style={{
                 position: 'absolute',
-                top: '70%',
+                top: '67%',
                 left: '48%',
                 transform: 'translate(-55%, -45%)',
                 ...sprintTitle

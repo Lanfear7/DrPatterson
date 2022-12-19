@@ -1,39 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import VPD from '../public/images/vpdLogo.png'
 import Train from '../public/images/trainLogo.png'
-import { useSpring,animated } from '@react-spring/web'
+import { useTransition, animated } from '@react-spring/web'
 import useWindowDimensions from '../hooks/windowWidth'
 
+function Clients({scrollPosition}) {
+    const { width } = useWindowDimensions()
 
-function Clients() {
-    const { height , width } = useWindowDimensions()
-
-    const rightTag = useSpring({
-        from: { x: width },
-        to: { x: 0 },
+    const transition = useTransition(scrollPosition>170,{
+        from: {x: width},
+        enter: {x: 0},
+        leave: {x: width, delay: 100}
     })
-
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const handleScroll = () => {
-        const position = window.pageYOffset;
-        setScrollPosition(position);
-    };
-    
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll, { passive: true });
-    
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
   return (
     <div className='Client-Container'>
-        {   
-            scrollPosition > 170 &&
-            <animated.div className='Container-Tag' style={{...rightTag}}>
-                <h1>Clients</h1>
-            </animated.div>
+        {
+            transition((style,item) =>
+                item && <animated.div style={style} className='Container-Tag'>
+                            <h1 className='Section-Title'>Clients</h1>
+                        </animated.div>
+            )
         }
         
         <div className='Clients-Logos'>

@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    animation: bgFade 4s 1;
+    animation: bgFade 3.5s 1;
     figure{
         margin: 0%;
     }
@@ -24,7 +24,7 @@
         justify-content: end;
         h1{
             margin: 0%;
-            margin-right: 5px;
+            margin-right: 10px;
             color: black;
         }
     }
@@ -34,7 +34,7 @@
         display: flex;
         justify-content: space-evenly;
         .Client{
-            animation: logoFadeIn 4.5s 1;
+            animation: logoFadeIn 4s 1;
             opacity: 1;
             figure{
                 width: 200px;
@@ -51,6 +51,16 @@
         }
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .Client-Container{
+        height: 100%;
+        .Clients-Logos{
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+    }
+  }
 
 @keyframes logoFadeIn {
     0%      {opacity: 0;}

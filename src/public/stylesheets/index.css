@@ -88,8 +88,8 @@
       -ms-flex-align: center;
           align-items: center;
   padding-top: 50px;
-  -webkit-animation: bgFade 4s 1;
-          animation: bgFade 4s 1;
+  -webkit-animation: bgFade 3.5s 1;
+          animation: bgFade 3.5s 1;
 }
 
 .Client-Container figure {
@@ -114,7 +114,7 @@
 
 .Client-Container .Container-Tag h1 {
   margin: 0%;
-  margin-right: 5px;
+  margin-right: 10px;
   color: black;
 }
 
@@ -130,8 +130,8 @@
 }
 
 .Client-Container .Clients-Logos .Client {
-  -webkit-animation: logoFadeIn 4.5s 1;
-          animation: logoFadeIn 4.5s 1;
+  -webkit-animation: logoFadeIn 4s 1;
+          animation: logoFadeIn 4s 1;
   opacity: 1;
 }
 
@@ -154,6 +154,17 @@
   height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+@media only screen and (max-width: 400px) {
+  .Client-Container {
+    height: 100%;
+  }
+  .Client-Container .Clients-Logos {
+    margin-top: 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @-webkit-keyframes logoFadeIn {
@@ -206,10 +217,103 @@
   }
 }
 
+.Education-Container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.Education-Container .Section-Title-Container {
+  position: absolute;
+  left: 0px;
+  background-color: #9bf8ff;
+  -webkit-box-shadow: 3px 3px lightgray;
+          box-shadow: 3px 3px lightgray;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.Education-Container .Section-Title-Container .Section-Title {
+  color: black;
+  margin-left: 10px;
+}
+
+.Education-Container .Education-Card-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.Education-Container .Education-Card-Container .School-Link {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.Education-Container .Education-Card-Container .School-Link .Education-Card {
+  width: 350px;
+  height: 550px;
+  border: 1px solid gray;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px;
+  background-color: white;
+  -webkit-transition: background-color .5s ease-in-out;
+  transition: background-color .5s ease-in-out;
+}
+
+.Education-Container .Education-Card-Container .School-Link .Education-Card figure {
+  width: 95%;
+  height: 60%;
+  opacity: 1;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.Education-Container .Education-Card-Container .School-Link .Education-Card figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 25px;
+}
+
+.Education-Container .Education-Card-Container .School-Link .Education-Card h4, .Education-Container .Education-Card-Container .School-Link .Education-Card h3 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+}
+
+.Education-Container .Education-Card-Container .School-Link .Education-Card:hover {
+  background-color: #6d6d6d;
+}
+
+.Education-Container .Education-Card-Container .School-Link .Education-Card:hover figure {
+  opacity: .8;
+}
+
 .App {
   text-align: center;
   background-color: #000000;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .App h1 {

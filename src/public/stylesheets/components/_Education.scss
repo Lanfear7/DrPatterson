@@ -1,0 +1,64 @@
+.Education-Container{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: white;
+    .Section-Title-Container{
+        position: absolute;
+        left: 0px;
+        background-color: rgb(155, 248, 255);
+        box-shadow: 3px 3px rgb(211, 211, 211);
+        width: 200px;
+        display: flex;
+        justify-content: start;
+        .Section-Title{
+            color: black;
+            margin-left: 10px;
+        }
+    }
+    .Education-Card-Container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 100%;
+        padding-top: 100px;
+        .School-Link{
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            .Education-Card{
+                width: 350px;
+                height: 550px;
+                border: 1px solid gray;
+                border-radius: 25px;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 50px;
+                background-color: white;
+                transition: background-color .5s ease-in-out;
+                figure{
+                    width: 95%;
+                    height: 60%;
+                    opacity: 1;
+                    transition: opacity .5s ease-in-out;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: fill;
+                        border-radius: 25px;
+                    }
+                }
+                h4,h3{
+                    flex-basis: 100%;
+                    text-align: center;
+                } 
+            }
+            .Education-Card:hover{
+                background-color: rgb(109, 109, 109); 
+                figure{
+                    opacity:.8;                    
+                }
+            }
+        }
+    }
+}
