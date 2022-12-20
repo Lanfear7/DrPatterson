@@ -4,6 +4,7 @@ import Landing from './component/Landing';
 import Clients from './component/Clients';
 import Education from './component/Education';
 import { useState, useEffect } from 'react';
+import Experience from './component/Experience';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       <Landing />
       <Clients scrollPosition={scrollPosition}/>
       <Education scrollPosition={scrollPosition}/>
+      <Experience scrollPosition={scrollPosition}/>
     </div>
   );
 }

@@ -6,7 +6,7 @@
     .Section-Title-Container{
         position: absolute;
         left: 0px;
-        background-color: rgb(155, 248, 255);
+        background-color: #91c8f5;
         box-shadow: 3px 3px rgb(211, 211, 211);
         width: 200px;
         display: flex;
@@ -22,27 +22,33 @@
         flex-wrap: wrap;
         height: 100%;
         padding-top: 100px;
-        .School-Link{
-            text-decoration: none;
-            color: black;
+        .Education-Card{
+            width: 350px;
+            height: 500px;
+            border: 1px solid gray;
+            border-radius: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 50px;
             background-color: white;
-            .Education-Card{
-                width: 350px;
-                height: 550px;
-                border: 1px solid gray;
-                border-radius: 25px;
-                display: flex;
-                flex-wrap: wrap;
-                margin: 50px;
-                background-color: white;
-                transition: background-color .5s ease-in-out;
+            transition: background-color .5s ease-in-out;
+            box-shadow: 15px 15px 20px rgba(88, 88, 88, 0.534);
+                .School-Link{
+                    text-decoration: none;
+                    color: black;
+                    background-color: white;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 25px;
                 figure{
-                    width: 95%;
+                    padding-top: 15px;
+                    width: 100%;
                     height: 60%;
                     opacity: 1;
                     transition: opacity .5s ease-in-out;
+                    margin: 0%;
                     img{
-                        width: 100%;
+                        width: 90%;
                         height: 100%;
                         object-fit: fill;
                         border-radius: 25px;
@@ -51,14 +57,15 @@
                 h4,h3{
                     flex-basis: 100%;
                     text-align: center;
+                    margin-bottom: 0%;
                 } 
-            }
-            .Education-Card:hover{
-                background-color: rgb(109, 109, 109); 
-                figure{
-                    opacity:.8;                    
+                h4{
+                    margin-bottom: 10px;
                 }
             }
+        }
+        .School-Link:hover{
+            background-color: rgba(133, 133, 133, 0.26); 
         }
     }
 }

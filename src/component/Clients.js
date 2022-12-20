@@ -8,18 +8,19 @@ function Clients({scrollPosition}) {
     const { width } = useWindowDimensions()
 
     const transition = useTransition(scrollPosition>170,{
-        from: {x: width},
+        from: {x: width/2},
         enter: {x: 0},
-        leave: {x: width, delay: 100}
+        leave: {x: width/2, delay: 100}
     })
 
   return (
     <div className='Client-Container'>
         {
             transition((style,item) =>
-                item && <animated.div style={style} className='Container-Tag'>
-                            <h1 className='Section-Title'>Clients</h1>
-                        </animated.div>
+                item && 
+                <animated.div style={style} className='Container-Tag'>
+                    <h1 className='Section-Title'>Clients</h1>
+                </animated.div>
             )
         }
         

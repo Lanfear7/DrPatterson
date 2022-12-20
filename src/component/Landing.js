@@ -77,7 +77,7 @@ function Landing() {
                 ...sprintTitle
             }}
         >
-            <h2>Hello, I Am</h2>
+            <h2>Hello, I'm</h2>
             <h1>Dr. Stewart-Patterson</h1>
             {
                 height > 900 && width > 600 &&

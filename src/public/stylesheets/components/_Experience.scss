@@ -1,0 +1,17 @@
+.Experience-Container{
+    min-height: 100vh;
+    background-color: white;
+    .Section-Title{
+        position: absolute;
+        right: 0px;
+        background-color: #91c8f5;
+        box-shadow: 3px 3px rgb(211, 211, 211);
+        width: 200px;
+        display: flex;
+        justify-content: start;
+        .Section-Title{
+            color: black;
+            margin-left: 10px;
+        }
+    }
+}

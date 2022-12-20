@@ -17,11 +17,11 @@
 }
 
 .Landing-Banner .Box-Left .Box-Left-Top {
-  background-color: #9bf8ff;
+  background-color: #91c8f5;
 }
 
 .Landing-Banner .Box-Left .Box-Left-Bottom {
-  background-color: #9bf8ff;
+  background-color: #91c8f5;
   z-index: 10;
 }
 
@@ -62,12 +62,13 @@
 }
 
 .Landing-Banner .Landing-Title h1 {
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .Landing-Banner .Landing-Title h2 {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -99,7 +100,7 @@
 .Client-Container .Container-Tag {
   position: absolute;
   right: 0px;
-  background-color: #9bf8ff;
+  background-color: #91c8f5;
   -webkit-box-shadow: 3px 3px lightgray;
           box-shadow: 3px 3px lightgray;
   width: 200px;
@@ -227,7 +228,7 @@
 .Education-Container .Section-Title-Container {
   position: absolute;
   left: 0px;
-  background-color: #9bf8ff;
+  background-color: #91c8f5;
   -webkit-box-shadow: 3px 3px lightgray;
           box-shadow: 3px 3px lightgray;
   width: 200px;
@@ -257,15 +258,9 @@
   padding-top: 100px;
 }
 
-.Education-Container .Education-Card-Container .School-Link {
-  text-decoration: none;
-  color: black;
-  background-color: white;
-}
-
-.Education-Container .Education-Card-Container .School-Link .Education-Card {
+.Education-Container .Education-Card-Container .Education-Card {
   width: 350px;
-  height: 550px;
+  height: 500px;
   border: 1px solid gray;
   border-radius: 25px;
   display: -webkit-box;
@@ -277,36 +272,75 @@
   background-color: white;
   -webkit-transition: background-color .5s ease-in-out;
   transition: background-color .5s ease-in-out;
+  -webkit-box-shadow: 15px 15px 20px rgba(88, 88, 88, 0.534);
+          box-shadow: 15px 15px 20px rgba(88, 88, 88, 0.534);
 }
 
-.Education-Container .Education-Card-Container .School-Link .Education-Card figure {
-  width: 95%;
+.Education-Container .Education-Card-Container .Education-Card .School-Link {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.Education-Container .Education-Card-Container .Education-Card .School-Link figure {
+  padding-top: 15px;
+  width: 100%;
   height: 60%;
   opacity: 1;
   -webkit-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
+  margin: 0%;
 }
 
-.Education-Container .Education-Card-Container .School-Link .Education-Card figure img {
-  width: 100%;
+.Education-Container .Education-Card-Container .Education-Card .School-Link figure img {
+  width: 90%;
   height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
   border-radius: 25px;
 }
 
-.Education-Container .Education-Card-Container .School-Link .Education-Card h4, .Education-Container .Education-Card-Container .School-Link .Education-Card h3 {
+.Education-Container .Education-Card-Container .Education-Card .School-Link h4, .Education-Container .Education-Card-Container .Education-Card .School-Link h3 {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-align: center;
+  margin-bottom: 0%;
 }
 
-.Education-Container .Education-Card-Container .School-Link .Education-Card:hover {
-  background-color: #6d6d6d;
+.Education-Container .Education-Card-Container .Education-Card .School-Link h4 {
+  margin-bottom: 10px;
 }
 
-.Education-Container .Education-Card-Container .School-Link .Education-Card:hover figure {
-  opacity: .8;
+.Education-Container .Education-Card-Container .School-Link:hover {
+  background-color: rgba(133, 133, 133, 0.26);
+}
+
+.Experience-Container {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.Experience-Container .Section-Title {
+  position: absolute;
+  right: 0px;
+  background-color: #91c8f5;
+  -webkit-box-shadow: 3px 3px lightgray;
+          box-shadow: 3px 3px lightgray;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.Experience-Container .Section-Title .Section-Title {
+  color: black;
+  margin-left: 10px;
 }
 
 .App {
