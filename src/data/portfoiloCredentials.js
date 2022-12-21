@@ -6,77 +6,117 @@ import UOA from '../public/images/UOA.png'
 import UOC from '../public/images/UOC.png'
 import UOAmsterdam from '../public/images/UOAmsterdam.png'
 
+import BC_Rail from '../public/images/BC_Rail_logo.png'
+import BCCDC from '../public/images/BCCDC.png'
+import BCPS from '../public/images/BCPS.jpg'
+import HBT from '../public/images/HBT.jpg'
+import KCMS from '../public/images/KCMS.png'
+import LifeMark from '../public/images/LifeMark.png'
+import Medisys from '../public/images/Medisys.png'
+import RCMP_logo from '../public/images/RCMP_logo.png'
+import SPLogo from '../public/images/SPLogo.png'
+import VP from '../public/images/viewpoint-logo.svg'
+
 const timer = 350
 
 export const ExperienceData = [{
       Title: 'CME Program Director',
       Employer: 'Harvard Medical School',
-      Duration: '2008 - Present · 15 yrs'
+      Duration: '2008 - Present · 15 yrs',
+      Logo: HMS,
+      Delay: timer * 2
     },
     {
       Title: 'Occupational Health Physician',
       Employer: 'Khatsalano Corporate Medical Services',
-      Duration: 'Feb 2005 - Present · 17 yrs 11 mos'
+      Duration: 'Feb 2005 - Present · 17 yrs 11 mos',
+      Logo: KCMS,
+      Delay: timer * 2
     },
     {
       Title: 'MD',
       Employer: 'Khatsalano Corporate Medical Services',
-      Duration: 'Oct 2004 - Present · 18 yrs 3 mos'
+      Duration: 'Oct 2004 - Present · 18 yrs 3 mos',
+      Logo: KCMS,
+      Delay: timer * 3
     },
     {
       Title: 'Claims Review Committee Examiner (Consultant)',
       Employer: 'HealthCare Benefit Trust',
-      Duration: '2002 - Present · 21 yrs'
+      Duration: '2002 - Present · 21 yrs',
+      Logo: HBT,
+      Delay: timer * 3
     },
     {
       Title: 'Occupational Medicine & Disability Evaluation Consultant',
       Employer: 'Viewpoint Medical Assessment Services Inc.',
-      Duration: '2003 - 2014 · 11 yrs'
+      Duration: '2003 - 2014 · 11 yrs',
+      Logo: VP,
+      Delay: timer * 4
     },
     {
       Title: 'Independent Medical Examiner (Consultant in Occupational Health)',
       Employer: 'Medisys',
-      Duration: '2008 - 2011 · 3 yrs'
+      Duration: '2008 - 2011 · 3 yrs',
+      Logo: Medisys,
+      Delay: timer * 4
     },
     {
       Title: 'Occupational Medicine',
       Employer: 'BC Public Service',
-      Duration: '1999 - 2010 · 11 yrs'
+      Duration: '1999 - 2010 · 11 yrs',
+      Logo: BCPS,
+      Delay: timer * 5
     },
     {
       Title: 'Chief Medical Officer',
       Employer: 'BC Rail',
-      Duration: '2002 - 2004 · 2 yrs'
+      Duration: '2002 - 2004 · 2 yrs',
+      Logo: BC_Rail,
+      Delay: timer * 5
     },
     {
       Title: 'Medical Consultant, Comprehensive Chronic Pain Program',
       Employer: 'Lifemark Health Centre',
-      Duration: '2002 - 2004 · 2 yrs'
+      Duration: '2002 - 2004 · 2 yrs',
+      Logo: LifeMark,
+      Delay: timer * 6
     },
     {
       Title: 'General Practice Physician & President (93-99)',
       Employer: 'Khatsalano Medical Clinics Ltd.',
-      Duration: '1993 - 2004 · 11 yrs'
+      Duration: '1993 - 2004 · 11 yrs',
+      Logo: KCMS,
+      Delay: timer * 6
     },
     {
       Title: 'Occupational Medicine (RCMP Health Services)',
       Employer: 'RCMP',
-      Duration: '2003 · Less than a year'
+      Duration: '2003 · Less than a year',
+      Logo: RCMP_logo,
+      Delay: timer * 7
+      
     },
     {
       Title: 'Emergency Medicine',
       Employer: "St. Paul's Hospital",
-      Duration: '1998 - 2002 · 4 yrs'
+      Duration: '1998 - 2002 · 4 yrs',
+      Logo: SPLogo,
+      Delay: timer * 7
     },
     {
       Title: 'Primary Care - Street Involved Youth & Homeless',
       Employer: 'BC Centre for Disease Control',
-      Duration: '1996 - 1999 · 3 yrs'
+      Duration: '1996 - 1999 · 3 yrs',
+      Logo: BCCDC,
+      Delay: timer * 8
     },
     {
       Title: 'Medical Consultant - Executive & Occupational Health',
       Employer: 'Medisys',
-      Duration: '1992 - 1997 · 5 yrs'
+      Duration: '1992 - 1997 · 5 yrs',
+      Logo: Medisys,
+      Delay: timer * 8
     },]
 
 export const EducationData = [

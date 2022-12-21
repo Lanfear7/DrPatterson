@@ -333,14 +333,105 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
-.Experience-Container .Section-Title .Section-Title {
+.Experience-Container .Section-Title h1 {
   color: black;
+  margin-right: 10px;
+}
+
+.Experience-Container .Experience-Card-Container {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Experience-Container .Experience-Card-Container .Experience-Card:nth-child(4n+1) {
+  background-color: #91c8f5;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.Experience-Container .Experience-Card-Container .Experience-Card:nth-child(4n) {
+  background-color: #91c8f5;
+  border-radius: 25px 0px 0px 25px;
+}
+
+.Experience-Container .Experience-Card-Container .Experience-Card:nth-child(2n) {
+  border-radius: 25px 0px 0px 25px;
+}
+
+.Experience-Container .Experience-Card-Container .Experience-Card:nth-child(2n+1) {
+  border-radius: 0px 25px 25px 0px;
+}
+
+.Experience-Container .Experience-Card-Container .Experience-Card {
+  -ms-flex-preferred-size: 49.5%;
+      flex-basis: 49.5%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 15px 5px 15px #a1a1a1;
+          box-shadow: 15px 5px 15px #a1a1a1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Experience-Container .Experience-Card-Container .Experience-Card figure {
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
   margin-left: 10px;
+}
+
+.Experience-Container .Experience-Card-Container .Experience-Card figure img {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.Experience-Container .Experience-Card-Container .Experience-Card .Experience-Details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+.Experience-Container .Experience-Card-Container .Experience-Card .Experience-Details h1, .Experience-Container .Experience-Card-Container .Experience-Card .Experience-Details h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: start;
+  margin: 0%;
+  color: black;
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Experience-Container .Experience-Card-Container .Experience-Card {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 .App {

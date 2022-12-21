@@ -12,8 +12,8 @@ function Education({scrollPosition}) {
         leave: {x: -200, y: 50}
     })
 
-    const educationCardAnimation = useTransition(scrollPosition>650 && educationData  ,{
-        from: {y: 1000, opacity: 0},
+    const educationCardAnimation = useTransition(scrollPosition>750 && educationData  ,{
+        from: {y: 300, opacity: 0},
         enter: item => (next) => (
             next({y:0, delay: item.Delay, opacity: 1})
         ),
