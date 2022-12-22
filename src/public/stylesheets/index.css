@@ -74,6 +74,34 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 500px) {
+  .Landing-Banner .Landing-Title {
+    color: black;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Landing-Banner .Landing-Title h1, .Landing-Banner .Landing-Title h2 {
+    color: black;
+  }
+  .Landing-Banner .Landing-Title h1 {
+    font-size: 50px;
+    margin-left: 25px;
+  }
+  .Landing-Banner .Landing-Title h2 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
 .Client-Container {
   position: relative;
   width: 100%;
@@ -457,6 +485,18 @@
             justify-content: center;
     height: 100%;
     border-radius: 0px 0px 0px 0px !important;
+  }
+  .Experience-Container .Experience-Card-Container .Experience-Card figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100px;
   }
 }
 

@@ -103,6 +103,12 @@
                 justify-content: center;
                 height: 100%;
                 border-radius: 0px 0px 0px 0px !important;
+                figure{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100px;
+                }
             }
         }
     }
