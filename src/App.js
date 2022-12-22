@@ -3,10 +3,15 @@ import './public/stylesheets/index.css';
 import Landing from './component/Landing';
 import Clients from './component/Clients';
 import Education from './component/Education';
-import { useState, useEffect } from 'react';
 import Experience from './component/Experience';
+import About from './component/About';
+import Footer from './component/Footer';
+
+import { useState, useEffect } from 'react';
 
 function App() {
+
+  document.title = 'Dr. Stewart-Patterson'
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -29,6 +34,8 @@ function App() {
       <Clients scrollPosition={scrollPosition}/>
       <Education scrollPosition={scrollPosition}/>
       <Experience scrollPosition={scrollPosition}/>
+      <About scrollPosition={scrollPosition}/>
+      <Footer/>
     </div>
   );
 }

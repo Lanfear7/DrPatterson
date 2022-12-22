@@ -41,7 +41,8 @@ export const ExperienceData = [{
       Delay: timer * 3
     },
     {
-      Title: 'Claims Review Committee Examiner (Consultant)',
+      Title: 'Claims Review Committee Examiner',
+      TitleExtention: '(Consultant)',
       Employer: 'HealthCare Benefit Trust',
       Duration: '2002 - Present · 21 yrs',
       Logo: HBT,
@@ -55,7 +56,8 @@ export const ExperienceData = [{
       Delay: timer * 4
     },
     {
-      Title: 'Independent Medical Examiner (Consultant in Occupational Health)',
+      Title: 'Independent Medical Examiner',
+      TitleExtention: '(Consultant in Occupational Health)',
       Employer: 'Medisys',
       Duration: '2008 - 2011 · 3 yrs',
       Logo: Medisys,
@@ -83,14 +85,16 @@ export const ExperienceData = [{
       Delay: timer * 6
     },
     {
-      Title: 'General Practice Physician & President (93-99)',
+      Title: 'General Practice Physician & President',
+      TitleExtention: '(93-99)',
       Employer: 'Khatsalano Medical Clinics Ltd.',
       Duration: '1993 - 2004 · 11 yrs',
       Logo: KCMS,
       Delay: timer * 6
     },
     {
-      Title: 'Occupational Medicine (RCMP Health Services)',
+      Title: 'Occupational Medicine',
+      TitleExtention: '(RCMP Health Services)',
       Employer: 'RCMP',
       Duration: '2003 · Less than a year',
       Logo: RCMP_logo,

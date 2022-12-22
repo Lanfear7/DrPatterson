@@ -1,6 +1,9 @@
 .Experience-Container{
+    position: relative;
+    z-index: 5;
     min-height: 100vh;
     background-color: white;
+    padding-bottom: 30px;
     .Section-Title{
         position: absolute;
         right: 0px;
@@ -38,7 +41,7 @@
         }
         .Experience-Card{
             flex-basis: 49.5%;
-            height: 200px;
+            height: 150px;
             display: flex;
             background-color: white;
             padding-top: 20px;
@@ -67,8 +70,14 @@
                     flex-basis: 100%;
                     text-align: start;
                     margin: 0%;
-                    color: black;
                     margin-left: 50px;
+                }
+                h1{
+                    font-size: 25px;
+                    color: black;
+                }
+                h2{
+                    font-size: 20px;
                 }
             }
         }     
@@ -80,6 +89,20 @@
         .Experience-Card-Container{
             .Experience-Card{
                 flex-basis: 100%; 
+                border-radius: 0px 0px 0px 0px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Experience-Container{
+        .Experience-Card-Container{
+            .Experience-Card{
+                flex-wrap: wrap;
+                justify-content: center;
+                height: 100%;
+                border-radius: 0px 0px 0px 0px !important;
             }
         }
     }

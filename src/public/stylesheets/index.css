@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
 .Landing-Banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,7 +8,7 @@
 }
 
 .Landing-Banner .Box-Left {
-  width: 45%;
+  width: 40%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,7 +27,7 @@
 }
 
 .Landing-Banner .Box-Right {
-  width: 55%;
+  width: 60%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +64,7 @@
 
 .Landing-Banner .Landing-Title h1 {
   font-size: 70px;
+  margin-left: 25px;
 }
 
 .Landing-Banner .Landing-Title h2 {
@@ -261,7 +263,7 @@
 .Education-Container .Education-Card-Container .Education-Card {
   width: 350px;
   height: 500px;
-  border: 1px solid gray;
+  border: 1px solid black;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,8 +321,11 @@
 }
 
 .Experience-Container {
+  position: relative;
+  z-index: 5;
   min-height: 100vh;
   background-color: white;
+  padding-bottom: 30px;
 }
 
 .Experience-Container .Section-Title {
@@ -378,7 +383,7 @@
 .Experience-Container .Experience-Card-Container .Experience-Card {
   -ms-flex-preferred-size: 49.5%;
       flex-basis: 49.5%;
-  height: 200px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,18 +428,178 @@
       flex-basis: 100%;
   text-align: start;
   margin: 0%;
-  color: black;
   margin-left: 50px;
+}
+
+.Experience-Container .Experience-Card-Container .Experience-Card .Experience-Details h1 {
+  font-size: 25px;
+  color: black;
+}
+
+.Experience-Container .Experience-Card-Container .Experience-Card .Experience-Details h2 {
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 1200px) {
   .Experience-Container .Experience-Card-Container .Experience-Card {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    border-radius: 0px 0px 0px 0px !important;
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .Experience-Container .Experience-Card-Container .Experience-Card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    border-radius: 0px 0px 0px 0px !important;
+  }
+}
+
+.About-Container {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  background-color: white;
+  padding-bottom: 100px;
+}
+
+.About-Container .About-Title-Container {
+  margin-top: 50px;
+  position: absolute;
+  left: 0px;
+  background-color: #91c8f5;
+  -webkit-box-shadow: 3px 3px lightgray;
+          box-shadow: 3px 3px lightgray;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.About-Container .About-Title-Container .About-Title {
+  margin-left: 10px;
+  color: black;
+}
+
+.About-Container .About-Content-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+}
+
+.About-Container .About-Content-Container .Photo-Container {
+  margin: 30px;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 950px;
+}
+
+.About-Container .About-Content-Container .Photo-Container img {
+  width: 100%;
+  height: 100%;
+}
+
+.About-Container .About-Content-Container .About-Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding-top: 60px;
+}
+
+.About-Container .About-Content-Container .About-Content p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: start;
+}
+
+@media only screen and (max-width: 1400px) {
+  .About-Container .About-Content-Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+  }
+  .About-Container .About-Content-Container .About-Content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-left: 0%;
+  }
+  .About-Container .About-Content-Container .About-Content p {
+    font-size: 20px;
+    text-align: start;
+    margin-right: 10px;
+  }
+}
+
+.Footer-Container {
+  width: 100%;
+  height: 100px;
+  background-color: #91c8f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Footer-Container .Footer-Navigation {
+  padding-left: 150px;
+}
+
+.Footer-Container .Footer-Navigation .Navigation-Item .Navigation-Link {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.Footer-Container .Footer-Navigation .Navigation-Item .Navigation-Link:hover {
+  color: black;
+  border-bottom: 1px solid #0099ff;
+}
+
 .App {
+  font-family: 'Manrope';
   text-align: center;
   background-color: #000000;
   min-height: 100vh;

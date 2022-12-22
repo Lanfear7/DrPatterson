@@ -1,15 +1,4 @@
 import React, { useState } from 'react'
-import BCRail from '../public/images/BC_Rail_logo.png'
-import BCCDC from '../public/images/BCCDC.png'
-import BCPS from '../public/images/BCPS.jpg'
-import HBT from '../public/images/HBT.jpg'
-import HMI from '../public/images/HMI.png'
-import KCMS from '../public/images/KCMS.png'
-import LifeMark from '../public/images/LifeMark.png'
-import Mendays from '../public/images/Medisys.png'
-import RCMP from '../public/images/RCMP_logo.png'
-import SP from '../public/images/SPLogo.png'
-import VP from '../public/images/viewpoint-logo.svg'
 
 import { ExperienceData } from '../data/portfoiloCredentials'
 import useWindowDimensions from '../hooks/windowWidth'
@@ -47,11 +36,8 @@ function Experience({scrollPosition}) {
 
   const experienceCards = useTransition(scrollPosition,{})
 
-  console.log(width, scrollPosition)
-
-
   const educationCardAnimation1800 = useTransition(scrollPosition > 2200 && experienceData,{
-    from: {y: 1700, opacity: 0},
+    from: {y: 700, opacity: 0},
     enter: item => (next) => (
         next({y:0, delay: item.Delay, opacity: 1})
     ),
@@ -61,7 +47,7 @@ function Experience({scrollPosition}) {
   })
 
   const educationCardAnimation1375 = useTransition(scrollPosition > 2600 && experienceData,{
-    from: {y: 1700, opacity: 0},
+    from: {y: 700, opacity: 0},
     enter: item => (next) => (
         next({y:0, delay: item.Delay, opacity: 1})
     ),
@@ -71,7 +57,7 @@ function Experience({scrollPosition}) {
   })
 
   const educationCardAnimation920 = useTransition(scrollPosition > 3200 && experienceData,{
-    from: {y: 1700, opacity: 0},
+    from: {y: 700, opacity: 0},
     enter: item => (next) => (
         next({y:0, delay: item.Delay, opacity: 1})
     ),
@@ -81,7 +67,7 @@ function Experience({scrollPosition}) {
   })
 
   const educationCardAnimation0 = useTransition(scrollPosition > 5000 && experienceData,{
-    from: {y: 1700, opacity: 0},
+    from: {y: 700, opacity: 0},
     enter: item => (next) => (
         next({y:0, delay: item.Delay, opacity: 1})
     ),
@@ -130,6 +116,10 @@ function Experience({scrollPosition}) {
               </figure>
               <div className='Experience-Details'>
                 <h1>{item.Title}</h1>
+                {
+                  item.TitleExtention &&
+                  <h1>{item.TitleExtention}</h1>
+                }
                 <h2>{item.Employer}</h2>
                 <h2>{item.Duration}</h2>
               </div>
@@ -146,6 +136,10 @@ function Experience({scrollPosition}) {
                 </figure>
                 <div className='Experience-Details'>
                   <h1>{item.Title}</h1>
+                  {
+                    item.TitleExtention &&
+                    <h1>{item.TitleExtention}</h1>
+                  }
                   <h2>{item.Employer}</h2>
                   <h2>{item.Duration}</h2>
                 </div>
@@ -162,6 +156,10 @@ function Experience({scrollPosition}) {
                   </figure>
                   <div className='Experience-Details'>
                     <h1>{item.Title}</h1>
+                    {
+                      item.TitleExtention &&
+                      <h1>{item.TitleExtention}</h1>
+                    }
                     <h2>{item.Employer}</h2>
                     <h2>{item.Duration}</h2>
                   </div>
@@ -177,6 +175,10 @@ function Experience({scrollPosition}) {
                   </figure>
                   <div className='Experience-Details'>
                     <h1>{item.Title}</h1>
+                    {
+                      item.TitleExtention &&
+                      <h1>{item.TitleExtention}</h1>
+                    }
                     <h2>{item.Employer}</h2>
                     <h2>{item.Duration}</h2>
                   </div>

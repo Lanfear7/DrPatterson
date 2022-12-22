@@ -2,8 +2,13 @@
 @import '../stylesheets/components/_Clients';
 @import '../stylesheets/components/_Education';
 @import '../stylesheets/components/_Experience';
+@import '../stylesheets/components/_About';
+@import '../stylesheets/components/_Footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 
 .App {
+    font-family: 'Manrope';
     text-align: center;
     background-color: #000000;
     min-height: 100vh;
