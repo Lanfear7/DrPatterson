@@ -81,7 +81,7 @@ function Landing() {
             <h1>Dr. Stewart-Patterson</h1>
             {
                 height > 900 && width > 600 &&
-                    <h2>Specializing In Occupation Medicine</h2>
+                    <h2>Practicing In Occupational Medicine</h2>
             }
             
         </animated.div>
